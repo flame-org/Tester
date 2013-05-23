@@ -9,6 +9,7 @@ namespace Flame\Tester\Helpers;
 
 use Flame\Tester\Tools\UIFormTestingPresenter;
 use Nette\ComponentModel\IComponent;
+use Nette\InvalidStateException;
 use Nette\Object;
 use Nette\Application\UI\Form;
 use Nette\DI\Container;
@@ -16,6 +17,14 @@ use Nette\Utils\Strings;
 
 class Application extends Object
 {
+
+	/**
+	 * @throws \Nette\InvalidStateException
+	 */
+	public function __consruct()
+	{
+		throw new InvalidStateException('Static class. Calling constructor is banned.');
+	}
 
 	/**
 	 * @param Container $context
