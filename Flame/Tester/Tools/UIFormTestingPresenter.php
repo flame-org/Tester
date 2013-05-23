@@ -10,7 +10,10 @@
 
 namespace Flame\Tester\Tools;
 
-class UIFormTestingPresenter extends \Flame\Application\UI\Presenter
+use Nette\Application\UI\Form;
+use Nette\Application\UI\Presenter;
+
+class UIFormTestingPresenter extends Presenter
 {
 
 	/** @var \Nette\Application\UI\Form */
@@ -19,7 +22,7 @@ class UIFormTestingPresenter extends \Flame\Application\UI\Presenter
 	/**
 	 * @param \Nette\Application\UI\Form $form
 	 */
-	public function __construct(\Nette\Application\UI\Form $form)
+	public function __construct(Form $form)
 	{
 		parent::__construct();
 		$this->form = $form;

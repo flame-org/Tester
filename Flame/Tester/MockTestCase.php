@@ -8,12 +8,10 @@
 
 namespace Flame\Tester;
 
-abstract class MockTestCase extends \Flame\Tester\TestCase
+abstract class MockTestCase extends TestCase
 {
 
-	/**
-	 * @var \Mockista\Registry
-	 */
+	/** @var  \Mockista\Registry */
 	protected $mockista;
 
 	protected function setUp()
