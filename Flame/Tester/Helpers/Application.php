@@ -21,7 +21,7 @@ class Application extends Object
 	/**
 	 * @throws \Nette\InvalidStateException
 	 */
-	public function __consruct()
+	public function __construct()
 	{
 		throw new InvalidStateException('Static class. Calling constructor is banned.');
 	}
