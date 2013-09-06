@@ -3,6 +3,7 @@
  * UIFormTestingPresenter.php
  *
  * @author  Jiří Šifalda <sifalda.jiri@gmail.com>
+ * @author Filip Procházka <filip@prochazka.su>
  * @package Flame
  *
  * @date    18.11.12

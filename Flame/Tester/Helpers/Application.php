@@ -3,6 +3,7 @@
  * Class Application
  *
  * @author: Jiří Šifalda <sifalda.jiri@gmail.com>
+ * @author Filip Procházka <filip@prochazka.su>
  * @date: 23.05.13
  */
 namespace Flame\Tester\Helpers;
